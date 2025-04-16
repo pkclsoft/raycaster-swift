@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 
 /// A canvas used to draw a single scene to.
 class Canvas {
@@ -41,7 +42,7 @@ class Canvas {
 	
 	/// Deallocates any resources used by the canvas.
 	deinit {
-		pixels.deallocate(capacity: Int(self.byteCount))
+		pixels.deallocate()
 	}
 	
 	/// Sets a pixel at a given coordinate to a given color.

@@ -33,11 +33,11 @@ struct Color : Equatable {
 }
 
 extension Color {
-	static var black = Color(red: 0, green: 0, blue: 0)
-	static var darkGrey = Color(red: 50, green: 50, blue: 50)
-	static var red = Color(red: 180, green: 0, blue: 0)
-	static var green = Color(red: 50, green: 128, blue: 0)
-	static var blue = Color(red: 0, green: 64, blue: 128)
-	static var yellow = Color(red: 255, green: 184, blue: 0)
-	static var orange = Color(red: 255, green: 80, blue: 0)
+	static let black = Color(red: 0, green: 0, blue: 0)
+	static let darkGrey = Color(red: 50, green: 50, blue: 50)
+	static let red = Color(red: 180, green: 0, blue: 0)
+	static let green = Color(red: 50, green: 128, blue: 0)
+	static let blue = Color(red: 0, green: 64, blue: 128)
+	static let yellow = Color(red: 255, green: 184, blue: 0)
+	static let orange = Color(red: 255, green: 80, blue: 0)
 }

@@ -16,7 +16,7 @@ class MainWindow: NSWindowController, NSWindowDelegate {
 		self.init(windowNibName: "MainWindow")
 
 		// Define the map. Use characters R, O, Y, B, G to set colors.
-		let map = try! Map(mapString: String.init(contentsOf: Bundle.main.url(forResource: "Map", withExtension: "txt")!))
+        let map = try! Map(mapString: String.init(contentsOf: Bundle.main.url(forResource: "Map", withExtension: "txt")!, encoding: .ascii))
 		
 		// Create a new player instance and place it somewhere in the grid
 		let player = Player(position: Point(x: 4.5, y: 5.5), direction: 0)
